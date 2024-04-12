@@ -1,4 +1,4 @@
-package org.launchcode;
+package launchcode;
 
 public class MenuItem {
     private double price;
@@ -27,6 +27,26 @@ public class MenuItem {
 
     public void setNew(boolean aNew) {
         isNew = aNew;
+    }
+
+    public double getPrice() {
+        return this.price;
+    }
+
+    public String getDescription() {
+        return this.description;
+    }
+
+    public String getCategory() {
+        return this.category;
+    }
+
+    public boolean isNew() {
+        return this.isNew;
+    }
+
+    public String toString() {
+        return STR."\{this.description} | \{this.category} | \{this.price} | \{this.isNew}";
     }
 }
 

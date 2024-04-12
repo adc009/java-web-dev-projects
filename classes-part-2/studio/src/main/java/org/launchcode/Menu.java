@@ -1,4 +1,4 @@
-package org.launchcode;
+package launchcode;
 
 import java.util.ArrayList;
 import java.util.Date;
@@ -27,6 +27,22 @@ public class Menu {
     public ArrayList<MenuItem> getItems() {
         return items;
     }
+
+    public void addItem(MenuItem newItem) {
+        items.add(newItem);
+    }
+
+    public String toString() {
+        String menuString = "";
+
+        for (MenuItem item : this.items) {
+            menuString = menuString.concat(item.toString() + "\n");
+        }
+
+        return menuString;
+
+    }
+
 }
 
 
